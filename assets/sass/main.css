@@ -1,0 +1,164 @@
+/* colors*/
+/* font */
+@font-face {
+  font-family: "charmon";
+  src: url(./../assets/fonts/Charmonman/Charmonman-Regular.ttf);
+}
+@font-face {
+  font-family: "poppins";
+  src: url(./../assets/fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: "poppins-bold";
+  src: url(./../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: "baby";
+  src: url(./../assets/fonts/Oooh_Baby/OoohBaby-Regular.ttf);
+}
+html,
+body {
+  max-width: 1400px;
+  max-height: 100vh;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  font-family: "poppins", sans-serif;
+  position: relative;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+h1 {
+  text-shadow: 4px 4px 3px rgb(42, 41, 41);
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  padding: 0.5em;
+}
+
+h2 {
+  font-size: 1em;
+  text-align: right;
+  letter-spacing: 1px;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid black;
+  margin-bottom: 5em;
+}
+
+h3 {
+  color: #292929;
+  font-size: 1.5em;
+  font-family: "poppins-bold";
+  margin-bottom: 2em;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  height: 100%;
+  flex-basis: 45%;
+  background-image: url(./../assets/img/twiga.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid rgb(209, 221, 234);
+}
+header p {
+  font-family: "baby", sans-serif;
+  font-size: 1.5em;
+  color: white;
+  width: 50%;
+  text-align: center;
+  text-shadow: #292929 1px 1px 1px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: -4.5em;
+  z-index: 2;
+}
+nav i {
+  border: 5px solid rgb(209, 221, 234);
+  background-color: white;
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  padding: 1em;
+  font-size: 1em;
+  margin: 0.2em;
+  color: rgb(125, 136, 147);
+}
+nav i:hover {
+  color: black;
+}
+
+footer {
+  bottom: 35px;
+  text-align: center;
+  position: fixed;
+  width: 25%;
+  color: rgb(209, 221, 234);
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer i {
+  border: none;
+  background-color: rgba(235, 235, 235, 0);
+  color: rgb(209, 221, 234);
+  font-size: 2em;
+  margin-right: 2em;
+}
+footer i :hover {
+  color: white;
+}
+
+main {
+  position: relative;
+  height: 90%;
+  padding-left: 15%;
+  flex-basis: 65%;
+  top: 4em;
+  bottom: 4em;
+  overflow: scroll;
+}
+
+article h4 {
+  float: right;
+  font-family: "baby";
+  font-size: 1.5em;
+}
+article div img {
+  width: 200px;
+  float: right;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+article div p {
+  text-align: justify;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,29 @@
+/* colors*/
+
+$color-primary: rgb(209, 221, 234);
+$color-secondary: rgb(125, 136, 147);
+$color-tertiary: #99E2D0;
+$color-4: rgb(110, 137, 161);
+$color-5: radial-gradient(white, rgb(209, 221, 234), rgb(125, 136, 147));
+
+/* font */
+
+@font-face {
+    font-family: "charmon";
+    src: url(./../assets/fonts/Charmonman/Charmonman-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url(./../assets/fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: "poppins-bold";
+    src: url(./../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "baby";
+    src: url(./../assets/fonts/Oooh_Baby/OoohBaby-Regular.ttf);
+}

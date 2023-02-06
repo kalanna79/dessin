@@ -1,0 +1,8 @@
+i {
+    display: block;
+    color: $color-secondary;
+    &:hover {
+        color: black;
+        border-color: $color-secondary;
+    }
+}

@@ -1,0 +1,315 @@
+/* colors*/
+/* font */
+@font-face {
+  font-family: "charmon";
+  src: url(./../assets/fonts/Charmonman/Charmonman-Regular.ttf);
+}
+@font-face {
+  font-family: "poppins";
+  src: url(./../assets/fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: "poppins-bold";
+  src: url(./../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: "baby";
+  src: url(./../assets/fonts/Oooh_Baby/OoohBaby-Regular.ttf);
+}
+html,
+body {
+  max-width: 1400px;
+  height: 100%;
+  max-height: 150%;
+  vertical-align: middle;
+}
+
+.container {
+  font-family: "poppins", sans-serif;
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+h1 {
+  text-shadow: 4px 4px 3px rgb(42, 41, 41);
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  padding: 0.5em;
+}
+
+h2 {
+  font-size: 1em;
+  text-align: right;
+  letter-spacing: 1px;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid black;
+  margin-bottom: 5em;
+}
+
+h3 {
+  color: #292929;
+  font-size: 1.5em;
+  font-family: "poppins-bold";
+  margin-bottom: 2em;
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  display: block;
+  color: rgb(125, 136, 147);
+}
+i:hover {
+  color: black;
+  border-color: rgb(125, 136, 147);
+}
+
+.filters ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.filters ul li {
+  text-align: center;
+  border: 4px solid rgb(209, 221, 234);
+  background-color: rgb(209, 221, 234);
+  padding: 5px;
+  border-radius: 10px;
+  width: 50px;
+  margin: 0 15px;
+}
+.filters ul li i {
+  display: block;
+  font-size: 20px;
+}
+.filters ul li:nth-of-type(3) i {
+  width: 50%;
+  display: inline-block;
+}
+
+/* .gallery {
+        overflow: hidden;
+        position: relative;
+        width: 95%;
+        span {
+            display: flex;
+            align-items: center;
+            z-index: 5;
+            font-size: 40px;
+            height: 100px;
+            border: 1px solid $color-primary;
+            background-color: $color-primary;
+            &:first-of-type {
+                float: left;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+            &:last-of-type {
+                right: 0;
+                position: absolute;
+            }
+        }
+    }
+
+    figure {
+        width: 90%;
+        height: 350px;
+        flex-basis: 100%;
+        border: 2px solid $color-4;
+        object-fit: cover;
+        text-align: center;
+        flex-grow: 1;
+        position: relative;
+        border-radius: 10px;
+        img {
+            height: 100%;
+        }
+        figcaption {
+            position: absolute;
+            text-align: center;
+            margin-top: -22px;
+            background-color: $color-4;
+            border: 1px solid $color-4;
+            display: block;
+            width: 100%;
+            color: white;
+            padding: 1px 0;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+
+    .miniatures {
+        display: flex;
+        flex-direction: row;
+        border: 2px solid $color-primary;
+        figure {
+            width: 100px;
+            height: 100px;
+            margin: 0;
+            border: 0;
+            border-right: 1px solid $color-primary;
+            figcaption {
+                display: none;
+            }
+        }
+    }
+
+*/
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  font-family: sans-serif;
+  position: relative;
+  width: 100%;
+}
+
+.grid-container {
+  position: relative;
+  columns: 4;
+  column-gap: 0.5rem;
+  width: 100%;
+  margin: 0;
+}
+.grid-container figure {
+  object-fit: cover;
+  display: inline-block;
+  width: 100%;
+  transition: all 0.25s ease-in-out;
+  margin: 0.3em;
+}
+.grid-container figure:hover img {
+  filter: grayscale(0);
+}
+.grid-container figure:hover {
+  border-color: coral;
+}
+.grid-container figure img {
+  width: 100%;
+  border: solid 1px black;
+  filter: grayscale(100%);
+  transition: all 0.25s ease-in-out;
+}
+.grid-container figure figcaption {
+  text-align: center;
+  background-color: rgb(110, 137, 161);
+  border: 1px solid rgb(110, 137, 161);
+  display: none;
+  color: white;
+  padding: 1px 0;
+}
+
+header {
+  height: 100%;
+  flex-basis: 40%;
+  background-image: url(./../assets/img/twiga.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid rgb(209, 221, 234);
+}
+header p {
+  font-family: "baby", sans-serif;
+  font-size: 1.5em;
+  color: white;
+  width: 50%;
+  text-align: center;
+  text-shadow: #292929 1px 1px 1px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: -4.5em;
+  z-index: 2;
+}
+nav i {
+  border: 4px solid rgb(209, 221, 234);
+  background-color: white;
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  padding: 1em;
+  font-size: 1em;
+  margin: 0.2em;
+  color: rgb(125, 136, 147);
+}
+nav i:hover {
+  color: black;
+  border-color: rgb(125, 136, 147);
+  background: radial-gradient(white, rgb(209, 221, 234), rgb(125, 136, 147));
+}
+
+footer {
+  bottom: 35px;
+  text-align: center;
+  position: fixed;
+  width: 25%;
+  color: rgb(209, 221, 234);
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer i {
+  border: none;
+  background-color: rgba(235, 235, 235, 0);
+  color: rgb(209, 221, 234);
+  font-size: 2em;
+  margin-right: 2em;
+}
+footer i :hover {
+  color: white;
+}
+
+main {
+  position: relative;
+  padding-left: 10%;
+  padding-right: 50px;
+  flex-basis: 70%;
+  top: 3em;
+  overflow: scroll;
+  font-size: 14px;
+  height: 95%;
+}
+
+article h4 {
+  float: right;
+  font-family: "baby";
+  font-size: 1.5em;
+}
+article div img {
+  width: 200px;
+  float: right;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+article div p {
+  text-align: justify;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+    footer {
+        bottom: 35px;
+        text-align: center;
+        position: fixed;
+        width: 25%;
+        color: rgb(209, 221, 234);
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        i {
+            border: none;
+            background-color: rgba(235, 235, 235, 0);
+            color: rgb(209, 221, 234);
+            font-size: 2em;
+            margin-right: 2em;
+             :hover {
+                color: white;
+            }
+        }
+    }
