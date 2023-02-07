@@ -3,18 +3,22 @@
 @font-face {
   font-family: "charmon";
   src: url(./../assets/fonts/Charmonman/Charmonman-Regular.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "poppins";
   src: url(./../assets/fonts/Poppins/Poppins-Light.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "poppins-bold";
   src: url(./../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "baby";
-  src: url(./../assets/fonts/Oooh_Baby/OoohBaby-Regular.ttf);
+  src: local("OoohBaby-Regular"), local("OoohBaby-Regular"), url(./../assets/fonts/Oooh_Baby/OoohBaby-Regular.ttf);
+  font-display: swap;
 }
 html,
 body {
@@ -193,17 +197,12 @@ i:hover {
   transition: all 0.25s ease-in-out;
   margin: 0.3em;
 }
-.grid-container figure:hover img {
-  filter: grayscale(0);
-}
 .grid-container figure:hover {
   border-color: coral;
 }
 .grid-container figure img {
   width: 100%;
   border: solid 1px black;
-  filter: grayscale(100%);
-  transition: all 0.25s ease-in-out;
 }
 .grid-container figure figcaption {
   text-align: center;
@@ -217,7 +216,7 @@ i:hover {
 header {
   height: 100%;
   flex-basis: 40%;
-  background-image: url(./../assets/img/twiga.jpg);
+  background-image: url(./../assets/img/twiga.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
