@@ -303,6 +303,7 @@ article h4 {
 }
 article div img {
   width: 200px;
+  height: 300px;
   float: right;
   margin-left: 20px;
   border-radius: 10px;
